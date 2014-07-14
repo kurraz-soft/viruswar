@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VW</title>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        ul.cell {overflow: hidden; margin: 0; padding: 0}
+        ul.cell > li {width: 60px; height: 60px; display: block; border: 1px solid; float: left; background: center center no-repeat}
+        ul.cell > li.blue { background-image: url('img/blue.gif');}
+        ul.cell > li.blue_z { background-image: url('img/blue_z.gif');}
+        ul.cell > li.red { background-image: url('img/red.gif'); }
+        ul.cell > li.red_z { background-image: url('img/red_z.gif');}
+        ul.cell > li.available {background-color: forestgreen}
+    </style>
+</head>
+<body>
+    <div style="margin: 0 auto; width: 690px; text-align: center" id="field">
+        <p><a href="http://www.iggamecenter.com/info/ru/viruswars.html">http://www.iggamecenter.com/info/ru/viruswars.html</a></p>
+        <h3>
+            Раунд: <span id="turn">1</span> Осталось ходов: <span id="steps_remains">5</span>
+            <br />
+            Ходит игрок: <span style="color: blue" id="player">Синий</span>
+        </h3>
+        <ul class="cell"></ul>
+    </div>
+</body>
+</html>
