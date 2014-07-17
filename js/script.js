@@ -195,7 +195,7 @@ $(function(){
     Game.prototype.gameover = function(){
         alert('Игрок ' + this.player + ' проиграл!');
         window.location.reload();
-    }
+    };
 
     Game.prototype.action = function(x,y){
         if(cells[x][y].available){
